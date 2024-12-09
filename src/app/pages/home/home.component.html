@@ -1,52 +1,55 @@
-<app-header></app-header>
-<div class="h-screen flex flex-col items-center px-4">
-  <!-- Seção de Boas-vindas -->
-  <div class="flex flex-col items-center justify-center mt-6 text-center">
-    <h1 class="text-3xl sm:text-4xl font-semibold">Welcome to HostXchange</h1>
-    <p class="text-base sm:text-lg mt-4">
-      The best place to find a host for your exchange
-    </p>
+<!-- app.component.html -->
+<div class="flex-container">
+  <div class="content">
+    <div class="flex flex-col items-center px-4">
+      <!-- Seção de Boas-vindas -->
+      <div class="flex flex-col items-center justify-center mt-6 text-center">
+        <h1 class="text-3xl sm:text-4xl font-semibold">Welcome to HostXchange</h1>
+        <p class="text-base sm:text-lg mt-4">
+          The best place to find a host for your exchange
+        </p>
+        <div class="mt-4 text-sm sm:text-base max-w-md">
+          HostXchange is a platform that connects people who want to host travelers
+          with people who are looking for a place to stay. It is a great way to meet
+          new people, learn about different cultures, and save money while
+          traveling. Whether you are a host or a traveler, HostXchange has something
+          for everyone. Sign up today and start your exchange journey!
+        </div>
+      </div>
 
-    <div class="mt-4 text-sm sm:text-base max-w-md">
-      HostXchange is a platform that connects people who want to host travelers
-      with people who are looking for a place to stay. It is a great way to meet
-      new people, learn about different cultures, and save money while
-      traveling. Whether you are a host or a traveler, HostXchange has something
-      for everyone. Sign up today and start your exchange journey!
-    </div>
-  </div>
+      <!-- Seção de Ofertas -->
+      <div class="flex flex-col items-center justify-center mt-8 w-full">
+        <h1 class="text-3xl sm:text-4xl font-semibold text-center">
+          What we offer
+        </h1>
+        <div class="flex flex-wrap justify-center gap-4 my-6">
+          <app-card 
+            title="Confira Avaliações" 
+            text="Veja o que outros viajantes dizem." 
+            imageUrl="assets/images/home/avaliacoes.jpg">
+          </app-card>      
+          <app-card
+            title="Encontre um Host"
+            text="Encontre o anfitrião perfeito para a sua viagem."
+            imageUrl="assets/images/home/lugar.jpeg">
+          ></app-card>
+          <app-card
+            title="Escolha o Lugar"
+            text="Escolha o lugar perfeito para a sua estadia."
+            imageUrl="assets/images/home/destino.webp">
+          ></app-card>
+        </div>
+      </div>
 
-  <!-- Seção de Ofertas -->
-  <div class="flex flex-col items-center justify-center mt-8 w-full">
-    <h1 class="text-3xl sm:text-4xl font-semibold text-center">
-      What we offer
-    </h1>
-    <div class="flex flex-wrap justify-center gap-4 my-6">
-      <app-card 
-      title="Confira Avaliações" 
-      text="Veja o que outros viajantes dizem." 
-      imageUrl="assets/images/home/avaliacoes.jpg">
-    </app-card>      
-    <app-card
-    title="Encontre um Host"
-    text="Encontre o anfitrião perfeito para a sua viagem."
-    imageUrl="assets/images/home/lugar.jpeg">
-    ></app-card>
-    <app-card
-    title="Escolha o Lugar"
-    text="Escolha o lugar perfeito para a sua estadia."
-    imageUrl="assets/images/home/destino.webp">
-    ></app-card>
-    </div>
-  </div>
-
-  <!-- Seção de Avaliações -->
-  <div class="flex flex-row items-center justify-center mt-8 w-full">
-    <h1 class="text-4xl sm:text-4xl font-semibold text-center ">
-      What people say about us
-    </h1>
-    <div class="flex flex-wrap justify-center gap-4 my-6">
-      <img class="w-96 rounded-md" src="assets/images/home/Group 64.jpg" alt="">
+      <!-- Seção de Avaliações -->
+      <div class="flex flex-col items-center justify-center mt-8 w-full">
+        <h1 class="text-4xl sm:text-4xl font-semibold text-center">
+          What people say about us
+        </h1>
+        <div class="flex flex-wrap justify-center gap-4 my-6">
+          <img class="w-96 rounded-md" src="assets/images/home/Group 64.jpg" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </div>
