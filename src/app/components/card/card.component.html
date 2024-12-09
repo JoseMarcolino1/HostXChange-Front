@@ -1,1 +1,20 @@
-<p>card works!</p>
+<div class="card bg-white border border-gray-300 rounded-lg shadow-md p-4 m-4 w-72 h-80 flex flex-col justify-between">
+    <div class="card-header text-xl font-semibold truncate mb-2">
+        <h2 class="truncate" title="{{title}}">{{title}}</h2>
+    </div>
+    <div class="card-body text-base flex-1 overflow-hidden">
+        <img 
+            class="w-full h-40 object-cover rounded-md mb-2" 
+            [src]="imageUrl" 
+            alt="Card Image">
+        <p 
+            class="text-gray-600 text-sm overflow-hidden text-ellipsis line-clamp-3">
+            {{text}}
+        </p>
+    </div>
+    <div class="card-footer text-right">
+        <button class="btn btn-primary bg-black hover:bg-gray-800 text-white py-2 px-4 rounded transition">
+            Action
+        </button>
+    </div>
+</div>
