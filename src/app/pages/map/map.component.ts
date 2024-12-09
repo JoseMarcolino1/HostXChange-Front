@@ -33,9 +33,16 @@ export class MapComponent implements OnInit {
       { coords: [35.6895, 139.6917], country: 'Japan' }
     ];
 
+    const customIcon = L.icon({
+      iconUrl: 'assets/images/exchange/avatar.png',
+      iconSize: [45, 45], 
+      iconAnchor: [19, 38], 
+      popupAnchor: [0, -38] 
+    });
+
     locations.forEach(location => {
-      L.marker(location.coords).addTo(this.map)
-        .bindPopup(`<b>${location.country}</b>`)
+      L.marker(location.coords, {icon: customIcon}).addTo(this.map)
+        .bindPopup(`<b>See hosts in ${location.country}?</b>`)
         .openPopup();
     });
   }
