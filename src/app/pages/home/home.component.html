@@ -26,7 +26,9 @@
           <app-card 
             title="Confira Avaliações" 
             text="Veja o que outros viajantes dizem." 
-            imageUrl="assets/images/home/avaliacoes.jpg">
+            imageUrl="assets/images/home/avaliacoes.jpg"
+            [link]="['/reviews', {id: 1}]"
+            >
           </app-card>      
           <app-card
             title="Encontre um Host"
@@ -36,7 +38,9 @@
           <app-card
             title="Escolha o Lugar"
             text="Escolha o lugar perfeito para a sua estadia."
-            imageUrl="assets/images/home/destino.webp">
+            imageUrl="assets/images/home/destino.webp"
+            [link]="['/map', {id: 3}]"
+            >
           ></app-card>
         </div>
       </div>
